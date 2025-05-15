@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon OBS Overlay</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/effects.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/components/hp-bars.css">
+    <link rel="stylesheet" href="css/components/panels.css">
+    <link rel="stylesheet" href="css/components/pokemon-cards.css">
+    <link rel="stylesheet" href="css/components/status-bars.css">
+    <link rel="preload" href="assets/fonts/press-start-2p.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="overlay">
+        <header>
+            <img src="assets/images/logo.svg" alt="Logo" class="logo">
+            <h1>Pokémon OBS Overlay</h1>
+        </header>
+        <main>
+            <div id="game-display" class="component"></div>
+            <div id="pokemon-team" class="component"></div>
+            <div id="performance-metrics" class="component"></div>
+            <div id="stats-panel" class="component"></div>
+            <div id="status-bar" class="component"></div>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/components/game-display.js"></script>
+    <script src="js/components/pokemon-status.js"></script>
+    <script src="js/components/stream-stats.js"></script>
+    <script src="js/utils/socket.js"></script>
+    <script src="js/utils/ui-helpers.js"></script>
+</body>
+
+</html>

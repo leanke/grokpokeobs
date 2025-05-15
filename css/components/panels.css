@@ -1,0 +1,42 @@
+.panel {
+    background: rgba(10, 10, 10, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    position: relative;
+    margin: 10px 0;
+}
+
+.panel-header {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+    padding: 10px;
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.panel-content {
+    padding: 10px;
+    color: var(--text-secondary);
+    overflow-y: auto;
+    max-height: 300px; /* Adjust as needed */
+}
+
+.panel-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.panel-content::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.panel-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.panel-content::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}

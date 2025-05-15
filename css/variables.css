@@ -1,0 +1,24 @@
+:root {
+    /* Core colors */
+    --background-color: #000000;
+    --panel-background: rgba(10, 10, 10, 0.8);
+    --accent-primary: #ffffff;
+    --accent-secondary: #dddddd;
+    --text-primary: #ffffff;
+    --text-secondary: #dddddd;
+    --border-color: rgba(255, 255, 255, 0.2);
+
+    /* HP bar colors */
+    --hp-green: #2DD164;
+    --hp-yellow: #FCCE4B;
+    --hp-red: #FB5B5D;
+
+    /* Font sizes */
+    --font-size-large: clamp(1.4rem, 2.2vw, 2rem);
+    --font-size-medium: clamp(1.1rem, 1.7vw, 1.6rem);
+    --font-size-small: clamp(0.8rem, 1.2vw, 1.1rem);
+    --font-size-tiny: clamp(0.7rem, 1vw, 0.9rem);
+
+    /* Glow effect */
+    --glow-effect: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.3);
+}

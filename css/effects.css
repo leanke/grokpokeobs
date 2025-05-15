@@ -1,0 +1,59 @@
+:root {
+    --effect-transition: all 0.3s ease-in-out;
+    --effect-fade-in: opacity 0.5s ease-in;
+    --effect-fade-out: opacity 0.5s ease-out;
+    --effect-scale-up: transform 0.3s ease-in-out;
+    --effect-scale-down: transform 0.3s ease-in-out;
+}
+
+.fade-in {
+    animation: fadeIn var(--effect-fade-in);
+}
+
+.fade-out {
+    animation: fadeOut var(--effect-fade-out);
+}
+
+.scale-up {
+    animation: scaleUp var(--effect-scale-up);
+}
+
+.scale-down {
+    animation: scaleDown var(--effect-scale-down);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleDown {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.9);
+    }
+}

@@ -1,0 +1,53 @@
+.pokemon-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.pokemon-card.empty {
+    opacity: 0.6;
+}
+
+.pokemon-sprite {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 5px auto;
+    image-rendering: pixelated;
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.3));
+}
+
+.pokemon-name {
+    font-family: 'Press Start 2P', 'Arial', sans-serif;
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 5px;
+    text-shadow: var(--glow-effect);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pokemon-status {
+    font-size: var(--font-size-tiny);
+    color: var(--accent-secondary);
+    margin-bottom: 5px;
+}
+
+.pokemon-status .poisoned {
+    color: #B45AFF; /* Purple for poison status */
+}
+
+.pokemon-stats {
+    font-family: 'Press Start 2P', 'Arial', monospace;
+    font-size: var(--font-size-small);
+    color: var(--text-secondary);
+    margin-bottom: 5px;
+    text-shadow: var(--glow-effect);
+}

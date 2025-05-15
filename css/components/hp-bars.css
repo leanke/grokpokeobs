@@ -1,0 +1,41 @@
+.pokemon-hp-bar-container {
+    width: 100%;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.pokemon-hp-bar {
+    height: 100%;
+    position: relative;
+    background: var(--hp-green-gradient);
+    transition: width 0.3s ease;
+    box-shadow: 0 0 10px rgba(45, 209, 100, 0.4);
+}
+
+.pokemon-hp-bar.low {
+    background: var(--hp-red-gradient);
+    box-shadow: 0 0 10px rgba(251, 91, 93, 0.4);
+}
+
+.pokemon-hp-bar.medium {
+    background: var(--hp-yellow-gradient);
+    box-shadow: 0 0 10px rgba(252, 206, 75, 0.4);
+}
+
+.pokemon-hp-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size-small);
+    color: var(--text-primary);
+    text-shadow: 0 0 2px rgba(0, 0, 0, 1);
+    font-weight: bold;
+}
